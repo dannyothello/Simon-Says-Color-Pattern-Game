@@ -71,6 +71,38 @@ button {
   background: yellow;
 }
 
+#button5 {
+  background: fuchsia;
+}
+
+#button5:active, #button5.lit {
+  background: darkmagenta;
+}
+
+#button6 {
+  background: white;
+}
+
+#button6:active, #button6.lit {
+  background: grey;
+}
+
+#button7 {
+  background: orange;
+}
+
+#button7:active, #button7.lit {
+  background: saddlebrown;
+}
+
+#button8 {
+  background: gold;
+}
+
+#button8:active, #button8.lit {
+  background: goldenrod;
+}
+
 /* images and videos max out at full width */
 img,
 video {

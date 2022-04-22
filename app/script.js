@@ -1,20 +1,26 @@
 // global constants
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [1, 3, 2, 1, 4, 1, 2, 4];
+var clueHoldTime = 1000
+var pattern = new Array(8);
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
+var playerMistakes;
 
 function startGame(){
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  playerMistakes = 0
+  //initialize pattern
+  for (var i = 0; i < pattern.length; i++) {
+    pattern[i] = getRandomNum(8) + 1
+  }
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
@@ -32,7 +38,11 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 466.2
+  4: 466.2,
+  5: 523.3,
+  6: 659.3,
+  7: 784,
+  8: 932.3
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -91,7 +101,8 @@ function playClueSequence(){
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime 
-    delay += cluePauseTime;
+    delay += cluePauseTime
+    clueHoldTime -= 15;
   }
 }
 
@@ -120,17 +131,33 @@ function guess(btn){
     
   }
   else{
+    playerMistakes += 1
+    if (playerMistakes === 3){
+      loseGame();
+    }
+    else{
+      giveStrike();
+    }
     //Player guessed wrong. Player loses the game.
-    loseGame();
+    // loseGame();
   }
 }
 
 function loseGame(){
   stopGame();
-  alert("Game Over. You lost.");
+  alert("3 strikes. You lost.");
 }
 
 function winGame(){
   stopGame();
   alert("Game Over. You won.");
+}
+
+function giveStrike(){
+  alert(`Strike ${playerMistakes}`)
+  playClueSequence();
+}
+
+function getRandomNum(max){
+  return Math.floor(Math.random() * max);
 }
