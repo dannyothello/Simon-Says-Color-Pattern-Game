@@ -68,8 +68,7 @@ If I had a few more hours, I would definitely try to implement more features for
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](https://oregonstate.zoom.us/rec/share/ZqnWgXFjwyKMG4hHTCjtl9IjTotnSTWpxGnHmUhfd19yxUjpyZqEzaEVBpBwT0Eq.D95bbKtDL82fF2D3?startTime=1650673481000
-Passcode: 6%t2sg@A)
+[My 5-minute Interview Recording](https://oregonstate.zoom.us/rec/play/xrZ4JAhZxKH2fXRM_YWErtpZJ6254lBM380hoLjKL2GitNKYGpeypLecFAx3OtFD70FpwpdtkaWo7WMk.7u9FNf3tn1fp-BiX)
 
 
 ## License
