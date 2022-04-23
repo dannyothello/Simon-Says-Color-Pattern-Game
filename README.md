@@ -45,7 +45,7 @@ The following **optional** features are implemented:
 
 https://www.engineeringtoolbox.com/note-frequencies-d_520.html
 
-I used this outside resource on musical note frequencies when implementing my 4 extra game buttons(8 in total). I wanted to research the appropriate pitch frequencies for the new buttons such that their sounds were in a steady, logical progression of notes. 
+I used this outside resource on musical note frequencies when implementing my 4 extra game buttons(8 in total). I wanted to research the appropriate pitch frequencies for the new buttons so that their sounds were in a steady, logical progression of notes. 
 
 https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/math/random
 
@@ -59,11 +59,11 @@ Another issue that I faced cropped up during the implementation phase of adding 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
-One question that I have about web development is how the general work flow is like. Web Development is a career path that I am considering to enter, so I am also interested in learning more about projects that web developers have contributed to and what inspires them everyday in their jobs. In terms of the technical side, I am also curious about the various web development technologies such as Node/Express, React, Postgres, SQL, Heroku and how they are specifically used in web development.  I am also wondering about the various tools and techniques a web developer would recommend in debugging, as well as some of the most suitable testing practices in web development. 
+One question that I have about web development is how the general work flow and day-to-day looks like. Web Development is a career path that I am considering for the near future, so I am also interested in learning more about projects that web developers have contributed to as well as what inspires them everyday in their jobs. In terms of the technical side, I am also curious about the various web development technologies such as Node/Express, React, Postgres, SQL, Heroku and how they are specifically used in web development.  I am also wondering about the various tools and techniques a web developer would recommend in debugging, as well as some of the most suitable testing practices in web development. 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-If I had a few more hours, I would definitely try to implement more features for my light and sound memory game. For example, I would maybe try to decorate and fully transition my game from a dark, halloween theme to a lighthearted, farm animal theme! I would try to spruce up my buttons by researching cute animal images and uploading them to the assets folder. I would implement the game in such a way that images pop up when buttons are clicked. I would also add an audio clip for each animal image. Finally, I would try to improve the overall aesthetic of my game by taking the time to learn more CSS syntax and really research prettier fonts and background colors. 
+If I had a few more hours, I would definitely try to implement additional features for my light and sound memory game. For example, I would maybe try to decorate and fully transition my game from a dark, halloween theme to a lighthearted, farm animal theme! I would try to spruce up my buttons by researching cute animal images and uploading them to the assets folder. I would implement the game in such a way that images pop up when buttons are clicked. I would also add an audio clip for each animal image. Finally, I would try to improve the overall visual and aesthetic of my game by taking the time to learn more CSS syntax and really research prettier fonts and background colors. 
 
 
 ## Interview Recording URL Link
