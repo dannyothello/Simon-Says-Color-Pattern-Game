@@ -14,6 +14,7 @@ var playerMistakes;
 
 function startGame(){
   //initialize game variables
+  clueHoldTime = 1000
   progress = 0;
   gamePlaying = true;
   playerMistakes = 0
