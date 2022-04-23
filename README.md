@@ -44,9 +44,11 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
 https://www.engineeringtoolbox.com/note-frequencies-d_520.html
+
 I used this outside resource on musical note frequencies when implementing my 4 extra game buttons(8 in total). I wanted to research the appropriate pitch frequencies for the new buttons such that their sounds were in a steady, logical progression of notes. 
 
 https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/math/random
+
 I referred to this link provided by the codepath pre-work description when implementing my getRandomNum function in order to generate a random secret pattern every time a new game starts(or the startGame function is called). 
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
