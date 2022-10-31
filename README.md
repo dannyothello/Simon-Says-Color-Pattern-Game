@@ -8,6 +8,8 @@ Time spent: 7 hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/northern-joyous-devourer)
 
+Link to live site: (https://northern-joyous-devourer.glitch.me/)
+
 ## Required Functionality
 
 The following **required** functionality is complete:
@@ -64,11 +66,6 @@ One question that I have about web development is how the general work flow and 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
 If I had a few more hours, I would definitely try to implement additional features for my light and sound memory game. For example, I would maybe try to decorate and fully transition my game from a dark, halloween theme to a lighthearted, farm animal theme! I would try to spruce up my buttons by researching cute animal images and uploading them to the assets folder. I would implement the game in such a way that images pop up when buttons are clicked. I would also add an audio clip for each animal image. Finally, I would try to improve the overall visual and aesthetic of my game by taking the time to learn more CSS syntax and really research prettier fonts and background colors. 
-
-
-## Interview Recording URL Link
-
-[My 5-minute Interview Recording](https://oregonstate.zoom.us/rec/play/xrZ4JAhZxKH2fXRM_YWErtpZJ6254lBM380hoLjKL2GitNKYGpeypLecFAx3OtFD70FpwpdtkaWo7WMk.7u9FNf3tn1fp-BiX)
 
 
 ## License
