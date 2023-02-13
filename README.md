@@ -8,8 +8,6 @@ Link to project: (https://glitch.com/edit/#!/northern-joyous-devourer)
 
 Link to live site: (https://northern-joyous-devourer.glitch.me/)
 
-## Required Functionality
-
 ## Video Walkthrough (GIF)
 
 
