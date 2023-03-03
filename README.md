@@ -18,17 +18,16 @@ Link to live site: (https://northern-joyous-devourer.glitch.me/)
 
 # Features 
 
-* "Start" button toggles between "Start" and "Stop" when clicked. 
-* Game buttons each light up and play a sound when clicked. 
+* "Start" button toggles between "Start" and "Stop" when clicked
+* Game buttons each light up and play a sound when clicked
 * Computer plays back sequence of clues including sound and visual cue for each button
-* Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
+* Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess
 * User wins the game after guessing a complete pattern
-* User loses the game after an incorrect guess
-* Buttons use a pitch (frequency) other than the ones in the tutorial
-* More than 4 functional game buttons
+* User loses the game after 3 mistakes
+* Buttons each use a different pitch (frequency) when pressed
+* 8 functional game buttons
 * Playback speeds up on each turn
 * Computer picks a different pattern each time the game is played
-* Player only loses after 3 mistakes (instead of on the first mistake)
 
 ## License
 
