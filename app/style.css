@@ -1,6 +1,6 @@
-/* a minimalist set of CSS resets */
+/* A minimalist set of CSS resets */
 
-/* default to border-box */
+/* Default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -10,7 +10,7 @@ html {
   box-sizing: inherit;
 }
 
-/* adjust typography defaults */
+/* Adjust typography defaults */
 body {
   margin: 1rem;
   font-family: sans-serif;
@@ -103,7 +103,7 @@ button {
   background: goldenrod;
 }
 
-/* images and videos max out at full width */
+/* Images and videos max out at full width */
 img,
 video {
   height: auto;

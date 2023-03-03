@@ -1,28 +1,31 @@
-// global constants
-const cluePauseTime = 333; //how long to pause in between clues
-const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+// Global constants
+const cluePauseTime = 333; // How long to pause in between clues
+const nextClueWaitTime = 1000; // How long to wait before starting playback of the clue sequence
 
-//Global Variables
-var clueHoldTime = 1000
-var pattern = new Array(8);
-var progress = 0; 
-var gamePlaying = false;
-var tonePlaying = false;
-var volume = 0.5;  //must be between 0.0 and 1.0
-var guessCounter = 0;
-var playerMistakes;
+// Global variables
+let clueHoldTime = 1000
+let pattern = new Array(8);
+let progress = 0; 
+let gamePlaying = false;
+let tonePlaying = false;
+let volume = 0.5;  //Must be between 0.0 and 1.0
+let guessCounter = 0;
+let playerMistakes;
 
 function startGame(){
-  //initialize game variables
+
+  // Initialize game variables
   clueHoldTime = 1000
   progress = 0;
   gamePlaying = true;
   playerMistakes = 0
-  //initialize pattern
+
+  // Initialize pattern
   for (var i = 0; i < pattern.length; i++) {
     pattern[i] = getRandomNum(8) + 1
   }
-  // swap the Start and Stop buttons
+
+  // Swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   playClueSequence();
@@ -34,7 +37,7 @@ function stopGame(){
   document.getElementById("stopBtn").classList.add("hidden");
 }
 
-// Sound Synthesis Functions
+// Sound synthesis functions
 const freqMap = {
   1: 261.6,
   2: 329.6,
@@ -45,6 +48,8 @@ const freqMap = {
   7: 784,
   8: 932.3
 }
+
+// Plays each sound in playback playClueSequence
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
   g.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
@@ -54,6 +59,8 @@ function playTone(btn,len){
     stopTone()
   },len)
 }
+
+// Plays sound when user mouses down on button
 function startTone(btn){
   if(!tonePlaying){
     context.resume()
@@ -63,6 +70,8 @@ function startTone(btn){
     tonePlaying = true
   }
 }
+
+// Stops sound when user mouses up on button
 function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
   tonePlaying = false
@@ -78,6 +87,7 @@ g.connect(context.destination)
 g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
+
 
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit")
@@ -97,10 +107,10 @@ function playSingleClue(btn){
 function playClueSequence(){
   guessCounter = 0;
   context.resume()
-  let delay = nextClueWaitTime; //set delay to initial wait time
-  for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
+  let delay = nextClueWaitTime; // Set delay to initial wait time
+  for(let i=0;i<=progress;i++){ // For each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
-    setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
+    setTimeout(playSingleClue,delay,pattern[i]) // Set a timeout to play that clue
     delay += clueHoldTime 
     delay += cluePauseTime
     clueHoldTime -= 15;
@@ -109,46 +119,50 @@ function playClueSequence(){
 
 function guess(btn){
   console.log("user guessed: " + btn);
+  // Don't record/validate guesses if game isn't active
   if(!gamePlaying){
     return;
   }
+
   if(pattern[guessCounter] == btn){
-    //Guess is correct
+    // Guess is correct
     if(guessCounter == progress){
       if(progress == pattern.length - 1){
-        //It's game over. Player wins. 
+        // It's game over. Player wins. 
         winGame();
       }
       else{
-        //Pattern is correct. Play next clue segment. 
+        // Pattern is correct. Play next clue segment. 
         progress++;
         playClueSequence();
       }
     }
     else{
-      //Check the next guess. 
+      // Check the next guess. 
       guessCounter++;
     }
     
   }
   else{
+    // Add a strike
     playerMistakes += 1
+    // Player loses if 3 strikes 
     if (playerMistakes === 3){
       loseGame();
     }
     else{
       giveStrike();
     }
-    //Player guessed wrong. Player loses the game.
-    // loseGame();
   }
 }
 
+// Player guessed wrong 3 times. Player loses the game.
 function loseGame(){
   stopGame();
   alert("3 strikes. You lost.");
 }
 
+// Player guessed pattern of 8 correctly. Player wins game. 
 function winGame(){
   stopGame();
   alert("Game Over. You won.");
