@@ -4,8 +4,6 @@ A simple interactive webpage that replicates the 1978 Simon Says toy by Milton B
 
 Languages/Technologies: JavaScript, HTML, CSS
 
-Link to project: (https://glitch.com/edit/#!/northern-joyous-devourer)
-
 Link to live site: (https://northern-joyous-devourer.glitch.me/)
 
 ## Video Walkthrough (GIF)
