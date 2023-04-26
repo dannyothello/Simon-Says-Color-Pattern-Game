@@ -26,15 +26,19 @@
     <button id="stopBtn" class="hidden" onclick="stopGame()">
       End
     </button>
+
+    <label for="toggle-notes" class="notes-label">Show Note Labels</label>
+    <input type="checkbox" id="toggle-notes" onclick="toggleNotes()" />
+
     <div id="gameButtonArea">
-      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
-      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
-      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
-      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
-      <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"></button>
-      <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)"></button>
-      <button id="button7" onmousedown="startTone(7)" onmouseup="stopTone()" onclick="guess(7)"></button>
-      <button id="button8" onmousedown="startTone(8)" onmouseup="stopTone()" onclick="guess(8)"></button>
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)" class="game-button"><span>Middle C</span></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)" class="game-button"><span>Middle E</span></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)" class="game-button"><span>Middle G</span></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)" class="game-button"><span>Middle A&#9839; / B&#9837</span></button>
+      <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)" class="game-button"><span>High C</span></button>
+      <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)" class="game-button"><span>High E</span></button>
+      <button id="button7" onmousedown="startTone(7)" onmouseup="stopTone()" onclick="guess(7)" class="game-button"><span>High G</span></button>
+      <button id="button8" onmousedown="startTone(8)" onmouseup="stopTone()" onclick="guess(8)" class="game-button"><span>High  A&#9839; / B&#9837</span></button>
     </div>
   </body>
 </html>

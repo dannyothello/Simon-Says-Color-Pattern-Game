@@ -176,3 +176,17 @@ function giveStrike(){
 function getRandomNum(max){
   return Math.floor(Math.random() * max);
 }
+
+function toggleNotes() {
+  const buttons = document.querySelectorAll(".game-button");
+  const checkbox = document.getElementById("toggle-notes");
+  if (checkbox.checked) {
+    buttons.forEach((button) => (button.querySelector("span").style.display = "inline"));
+  } else {
+    buttons.forEach((button) => (button.querySelector("span").style.display = "none"));
+  }
+}
+
+window.onload = function() {
+  toggleNotes();
+};
