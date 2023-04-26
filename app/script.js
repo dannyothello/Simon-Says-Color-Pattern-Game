@@ -177,19 +177,10 @@ function getRandomNum(max){
   return Math.floor(Math.random() * max);
 }
 
-const noteLabelToggle = document.getElementById("note-label-toggle");
-const gameButtons = document.querySelectorAll(".game-button");
-
-noteLabelToggle.addEventListener("change", function () {
-  const checked = this.checked;
-
-  gameButtons.forEach((button) => {
-    const noteLabel = button.querySelector(".note-label");
-
-    if (checked) {
-      noteLabel.classList.remove("note-label-hidden");
-    } else {
-      noteLabel.classList.add("note-label-hidden");
-    }
-  });
-});
+function toggleNoteLabels() {
+  var buttons = document.querySelectorAll('.game-button');
+  for (var i = 0; i < buttons.length; i++) {
+    var span = buttons[i].querySelector('span');
+    span.style.display = span.style.display === 'none' ? 'inline-block' : 'none';
+  }
+}

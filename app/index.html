@@ -27,11 +27,10 @@
       End
     </button>
 
-    <label for="note-label-toggle">Show note labels</label>
-    <input type="checkbox" id="note-label-toggle" />
+    <button id="toggleBtn" onclick="toggleNoteLabels()">Toggle note labels</button>
 
     <div id="gameButtonArea">
-      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)" class="game-button" data-note="Middle C"></button>
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)" class="game-button"><span>C</span></button>
       <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)" class="game-button"></button>
       <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)" class="game-button"></button>
       <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)" class="game-button"></button>
