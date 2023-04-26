@@ -141,6 +141,13 @@ button span {
   height: 200px;
 }
 
+.game-button .note-label {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
 .game-button .note-label-hidden {
   display: none;
 }
