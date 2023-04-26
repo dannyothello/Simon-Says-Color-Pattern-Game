@@ -177,10 +177,12 @@ function getRandomNum(max){
   return Math.floor(Math.random() * max);
 }
 
-function toggleNoteLabels() {
-  var buttons = document.querySelectorAll('.game-button');
-  for (var i = 0; i < buttons.length; i++) {
-    var span = buttons[i].querySelector('span');
-    span.style.display = span.style.display === 'none' ? 'inline-block' : 'none';
+function toggleNotes() {
+  const buttons = document.querySelectorAll(".game-button");
+  const checkbox = document.getElementById("toggle-notes");
+  if (checkbox.checked) {
+    buttons.forEach((button) => (button.querySelector("span").style.display = "inline"));
+  } else {
+    buttons.forEach((button) => (button.querySelector("span").style.display = "none"));
   }
 }

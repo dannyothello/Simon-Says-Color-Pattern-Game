@@ -27,7 +27,8 @@
       End
     </button>
 
-    <button id="toggleBtn" onclick="toggleNoteLabels()">Toggle note labels</button>
+    <label for="toggle-notes">Show Note Labels</label>
+    <input type="checkbox" id="toggle-notes" onclick="toggleNotes()" />
 
     <div id="gameButtonArea">
       <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)" class="game-button"><span>C</span></button>
