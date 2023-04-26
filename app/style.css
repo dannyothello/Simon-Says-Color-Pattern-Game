@@ -143,3 +143,7 @@ button span {
 .game-button.show-note span {
   display: inline;
 }
+
+.notes-label {
+  margin-left: 100px; /* adjust the value as needed */
+}
