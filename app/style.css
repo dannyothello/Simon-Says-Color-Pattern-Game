@@ -35,7 +35,6 @@ button {
   flex-grow: 0;
   flex-shrink: 0;
   margin: 5px;
-  height:200px;
 }
 
 .hidden {
@@ -136,6 +135,10 @@ video {
 button span {
   display: block;
   text-align: center;
+}
+
+.game-button {
+  height: 200px;
 }
 
 .game-button .note-label-hidden {
