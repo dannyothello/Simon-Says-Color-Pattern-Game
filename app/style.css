@@ -35,6 +35,7 @@ button {
   flex-grow: 0;
   flex-shrink: 0;
   margin: 5px;
+  height:200px;
 }
 
 .hidden {
