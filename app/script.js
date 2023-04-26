@@ -181,11 +181,12 @@ function toggleNotes() {
   const buttons = document.querySelectorAll(".game-button");
   const checkbox = document.getElementById("toggle-notes");
   if (checkbox.checked) {
-    buttons.forEach((button) => (button.querySelector(".note-label").style.display = "inline"));
+    buttons.forEach((button) => (button.querySelector("span").style.display = "inline"));
   } else {
-    buttons.forEach((button) => (button.querySelector(".note-label").style.display = "none"));
+    buttons.forEach((button) => (button.querySelector("span").style.display = "none"));
   }
 }
 
-// hide notes initially
-toggleNotes();
+window.onload = function() {
+  toggleNotes();
+};
