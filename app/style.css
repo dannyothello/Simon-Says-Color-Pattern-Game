@@ -132,3 +132,8 @@ video {
 #button8 {
   order: 2;
 }
+
+button span {
+  display: block;
+  text-align: center;
+}
