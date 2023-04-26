@@ -26,6 +26,10 @@
     <button id="stopBtn" class="hidden" onclick="stopGame()">
       End
     </button>
+
+    <label for="note-label-toggle">Show note labels</label>
+    <input type="checkbox" id="note-label-toggle" />
+
     <div id="gameButtonArea">
       <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"><span>Middle C</span></button>
       <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
