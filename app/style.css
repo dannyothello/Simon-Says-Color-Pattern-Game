@@ -137,3 +137,7 @@ button span {
   display: block;
   text-align: center;
 }
+
+.game-button .note-label-hidden {
+  display: none;
+}
