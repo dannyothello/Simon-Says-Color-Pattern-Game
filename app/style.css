@@ -139,7 +139,9 @@ button span {
 
 .game-button span {
   display: none;
+  font-size: 24px; /* Change to desired size */
 }
+
 .game-button.show-note span {
   display: inline;
 }
