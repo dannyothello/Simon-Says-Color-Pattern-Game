@@ -30,10 +30,11 @@ button {
   margin: 5px;
 }
 
-#gameButtonArea > button {
-  width:215px;
-  height:200px;
-  margin:2px;
+#gameButtonArea button {
+  flex-basis: calc(25% - 10px);
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 5px;
 }
 
 .hidden {
