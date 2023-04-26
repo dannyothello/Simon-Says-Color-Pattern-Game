@@ -137,3 +137,10 @@ button span {
   display: block;
   text-align: center;
 }
+
+.game-button span {
+  display: none;
+}
+.game-button.show-note span {
+  display: inline;
+}
